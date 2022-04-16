@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #644bff;
+  padding: 0 20px;
+}
+
+::selection{
+  color: #fff;
+  background: #664AFF;
+}
+
+.wrapper{
+  max-width: 450px;
+  margin: 150px auto;
+}
+
+.wrapper .search-input{
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+  border: 1px solid black;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  /* background: #efefef; */
+  background:black;color:white;
+}
+
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
+}
+
+*{
+  font-family: roboto, arial, helvetica;
+  margin: 0px;
+  padding: 0px;
+}
+#navbar-container{
+  background-color: rgb(24,21,67);
+  color: rgb(173,216,234);
+  text-align: center;
+  font-size: 24px;
+}
+#navbar{
+  display:flex; 
+  gap: 2rem;
+  background-image: url("./images/blue-bg.jpeg");
+  display:flex;
+  flex-wrap: wrap;
+  padding: 11px;
+  justify-content: center;
+}
+
+#navbar-logo-img{
+  height:40px;
+  width : 80px;
+  color: white;
+}
+#navbar-plus-sign{
+  display:flex;
+  font-size:16px;
+  width : 100px;
+  gap: 0.2rem;
+  padding-top: 8px;
+  padding-left: 5px;
+  background-color: rgb(27,183,110);
+  height:45px !important;
+  border-radius: 5px;
+}
+#navbar-plus-icon{
+  background-color: white;
+  color: green;
+  height:15px;
+  margin: 5px;
+  
+}
+#navbar-go-add-free{
+  background-color: blueviolet;
+  font-size:16px;
+  width : 100px;
+  padding-top: 8px;
+  padding-left: 5px;
+  height:45px !important;
+  border-radius: 5px;
+}
+#navbar-notification{
+  color: white;
+}
+#navbar-user{
+  border-radius: 50%;
+  background-color: black;
+  height:20px;
+  width:20px;
+  text-align: center;
+  padding-top: 8px;
+  padding-left: 5px;
+}
+#navbar-plus-sign-white{
+  margin-top: 5px;
+  color: white;
+  font-family: roboto, arial, helvetica;
+  
+}
+#navbar-username{
+  color: white;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-top: 8px;
+  padding-left: 5px;
+}
+#navbar-search-bar-text{
+  width: 400px;
+  height:40px;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 8px;
+  padding-left: 5px;
+}
+#navbar-text-below{
+  padding: 5px;
+  padding-top: 8px;
+  padding-left: 5px;
+
+}
+
+/* ----------- Inifinite Scrooling ----------------------*/
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#card-img-even{
+  margin:10px;
+  width:320px;
+  height:350px;
+}
+#card-img-odd{
+  margin:10px;
+  width:320px;
+  height:350px;
+}
+#body-heart{
+  padding:20px;
+}
